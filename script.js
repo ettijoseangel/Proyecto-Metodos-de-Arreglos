@@ -35,4 +35,15 @@ console.log("****************");
 
 // 5. Usar reduce() para sumar todos los precios de los productos que valen menos de 100
 const suma_menos_cien = menos_cien.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+
 console.log("La suma de los productos es:", suma_menos_cien);
+console.log("****************");
+
+// 6. Usar some() para verificar si por lo menos un producto de la categoria "Electrónica"
+const producto_electronica = productos.some(producto => producto.categoria === "Electrónica");
+
+console.log(producto_electronica);
+console.log("****************");
+
+
+
