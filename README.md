@@ -17,4 +17,4 @@ Eres el encargado de gestionar los datos de una tienda online. Tienes un listado
 * Usa sort() para ordenar esos productos alfabéticamente por su nombre.
 * Usa map() para generar un nuevo arreglo que contenga solo los nombres de los productos.
 * Muestra los resultados de la aplicación de cada métiodo en consola.
-* (Oppcional) Incluye alguno de los métodos faltantes (reduce, some, every, includes, etc.) con algún caso de uso en este ejemplo, usa tu creatividad.
+* (Opcional) Incluye alguno de los métodos faltantes (reduce, some, every, includes, etc.) con algún caso de uso en este ejemplo, usa tu creatividad.
