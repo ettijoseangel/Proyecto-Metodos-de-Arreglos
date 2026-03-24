@@ -23,3 +23,11 @@ const productos_ordenados = menos_cien.sort((a, b) => {
 });
 
 console.log("Los productos ordenados son los siguientes: ", productos_ordenados);
+console.log("****************");
+
+// 4. Usa map() para generar un nuevo arreglo que contenga solo los nombre de los productos
+const solo_nombres = productos_ordenados.map(producto => producto.nombre);
+
+console.log(solo_nombres);
+console.log("****************");
+
