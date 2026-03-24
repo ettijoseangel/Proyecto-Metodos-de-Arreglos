@@ -49,6 +49,7 @@ console.log("****************");
 const primer_electronico = productos.find(producto => producto.categoria === "Electrónica");
 
 console.log("El primer producto encontrado es:", primer_electronico.nombre);
+console.log("****************");
 
 // 8. Usar filter() y map() para encontrar todos los productos de la categoria "Electrónica"
 const productos_electronicos = productos.
