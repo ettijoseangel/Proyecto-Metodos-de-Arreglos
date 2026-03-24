@@ -31,3 +31,8 @@ const solo_nombres = productos_ordenados.map(producto => producto.nombre);
 console.log(solo_nombres);
 console.log("****************");
 
+// Metodos opcionales
+
+// 5. Usar reduce() para sumar todos los precios de los productos que valen menos de 100
+const suma_menos_cien = menos_cien.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+console.log("La suma de los productos es:", suma_menos_cien);
