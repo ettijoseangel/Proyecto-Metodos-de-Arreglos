@@ -45,5 +45,28 @@ const producto_electronica = productos.some(producto => producto.categoria === "
 console.log(producto_electronica);
 console.log("****************");
 
+// 7. Usar find() para encontrar al primer producto de la categoria "Electrónica"
+const primer_electronico = productos.find(producto => producto.categoria === "Electrónica");
 
+console.log("El primer producto encontrado es:", primer_electronico.nombre);
 
+// 8. Usar filter() y map() para encontrar todos los productos de la categoria "Electrónica"
+const productos_electronicos = productos.
+    filter(producto => producto.categoria === "Electrónica")
+    .map(producto => producto.nombre);
+
+console.log("Los productos de la categoría 'Electrónica' son los siguientes:", productos_electronicos.join(", "));
+console.log("****************");
+
+// 9. Usar reduce() para sumar todos los precios de todos los productos del arreglo
+const sumatoria_precio = productos.reduce((alcancia, producto) => alcancia + producto.precio, 0);
+
+console.log("La sumatoria de todos los precios es de: $" + sumatoria_precio);
+console.log("****************");
+
+// 10. Reto: Cuanto dinero se tiene invertido solo en la categoria "Electrónica"
+const precio_total_electronica = productos
+    .filter(producto => producto.categoria === "Electrónica")
+    .reduce((alcancia, producto) => alcancia + producto.precio, 0);
+
+console.log("La sumatoria de los precios de la categoría de Electrónica es de: $" + precio_total_electronica);
