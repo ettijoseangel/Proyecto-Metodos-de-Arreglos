@@ -5,7 +5,7 @@ const productos = [
     { nombre: "Camiseta", precio: 15, categoria: "Ropa" },
     { nombre: "Laptop", precio: 800, categoria: "Electrónica" },
     { nombre: "Libro", precio: 12, categoria: "Educación" },
-    { nombre: "Agua", precio: 50, categoria: "Ropa" },
+    { nombre: "Zapatos", precio: 50, categoria: "Ropa" },
     { nombre: "Celular", precio: 600, categoria: "Electrónica" },
 ];
 
@@ -15,3 +15,11 @@ const menos_cien = productos.filter(producto => producto.precio < 100);
 console.log("Los productos que valen menos de 100 pesos son: ", menos_cien);
 console.log("****************");
 
+// 3. Usa sort() para ordenar esos productos alfabeticamente por su nombre
+const productos_ordenados = menos_cien.sort((a, b) => {
+    if (a.nombre < b.nombre) return -1;
+    if (a.nombre > b.nombre) return 1;
+    return 0;
+});
+
+console.log("Los productos ordenados son los siguientes: ", productos_ordenados);
